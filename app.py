@@ -13,7 +13,7 @@ def miss():
 
 @server.route('/login', methods=['get', 'post'])
 def login():
-    return login_controller.do_login()
+    return login_controller.loginController().do_login()
 
 
 if __name__ == '__main__':
