@@ -35,4 +35,5 @@ class loginController:
         cache = redis_cache.redisCache().get_drive()
         cache.set("song_test_" + token, json.dumps(userinfo))
 
-        return success("登录成功！", userinfo)
+        response_data = {'token': token}
+        return success("登录成功！", response_data)

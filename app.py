@@ -8,7 +8,7 @@ server = flask.Flask(__name__)
 
 @server.route('/')
 def miss():
-    return "hello world"
+    return "hello python"
 
 
 @server.route('/login', methods=['get', 'post'])
